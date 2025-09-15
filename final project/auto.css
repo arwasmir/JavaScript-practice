@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body  {
+    font-family: "Noto Sans", sans-serif;
+    height: auto;
+    /* width: 100vw; */
+    background-color: #e6e6e6;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+}
+
+nav .navbar {
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content:  space-between;
+    /* margin-right: ; */
+}
+
+nav .navbar  a {
+    width:300px ;
+}
+
+nav .navbar  img{
+    width: 50%;
+    height: 70%; 
+    margin-left: 20%;
+    margin-top: 15px;
+}
+
+.navbar .list {
+    /* background-color: red; */
+    width: 800px;
+    padding-top: 25px;
+}
+
+.navbar .dropdown {
+    position: relative;
+}
+
+.navbar .content {
+    position: absolute;
+    display: none;
+    background-color: white;
+    width: 250px;
+    left: 0;
+    top: 100%;
+    z-index: 11;
+}
+
+.navbar .content  li {
+    width: 210px;
+    padding-top: 50px;
+    padding-left: 70px;
+}
+
+.navbar .content  li{
+    /* display: block; */
+}
+
+.navbar .dropdown:hover .content {
+    display: block;
+}
+
+.list ul li {
+    display: inline-block;
+    padding-left: 100px;
+    /* padding-right: 20%; */
+}
+
+.list ul li .add {
+    margin-left: 70px;
+}
+
+.list ul li .add button {
+    border: none;
+    background-color: #e6e6e6;
+    width: 150px;
+    height: 50px ;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.list ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .searchbar input {
+    width: 300px;
+    border-radius: 20px;
+    height: 50px;
+    margin: 10px;
+    border: none;
+    margin-top: 20px;
+    background-color: #e6e6e6;
+}
+
+.navbar .searchbar input::selection{
+    border: red;
+}
+
+.navbar .searchbar i  {
+    font-size: 25px;
+}

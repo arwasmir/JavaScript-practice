@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="imgs/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=M+PLUS+Rounded+1c:wght@400;500;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styletwo.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="index.html"><img src="imgs/logo.png" alt="logo"></a>
+            <div class="searchbar">
+                <input type="search">
+                <i class="fa-solid fa-search"></i>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>All Category </li>
+                    <li> Services</li>
+                    <li>
+                        <a href="contact.html"><i class="fa-solid fa-phone"></i></a>
+                        <a href="contact.html">Contact US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="header">
+        <section class="sectionOne">
+            <h1>Contact Us</h1>
+        </section>
+    </div>
+
+    <div class="contact">
+        <div class="left">
+            <div class="attach" onclick="this.querySelector('input').click()">
+                <input type="file" accept="image/*" onchange="previewImage(event, this)" style="display:none">
+                Add file or drop here
+            </div>
+            <form action="" onsubmit="sendForm(e)">
+                <input type="text" name="" id="username" placeholder="Enter your Name">
+                <input type="text" placeholder="Enter your Phone Number">
+                <input type="email" placeholder="Enter your email">
+                <textarea name="" id="" placeholder="Description Your issue...."></textarea>
+                <button>Submit <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+        </div>
+        <div class="right">
+            <div class="workhu">
+                <i class="fa-solid fa-clock"></i>
+                <div class="all">
+                    <h3>Working Hours</h3>
+                    <p>Sunday to Thursday, 9:00AM - 7PM </p>
+                </div>
+            </div>
+            <div class="phoneNum">
+                <i class="fa-solid fa-phone"></i>
+                <div class="all">
+                    <h3>Phone Number</h3>
+                    <p>01023587585 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let lastScrollTop = 0;
+        window.addEventListener("scroll", () => {
+            let scrollTop = window.scrollY;
+            if (scrollTop > lastScrollTop) {
+                navbar.style.top = "100%";
+
+            } else {
+                navbar.style.top = "0"
+            }
+            lastScrollTop = scrollTop;
+        })
+    </script>
+</body>
+
+</html>

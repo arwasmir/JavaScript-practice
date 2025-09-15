@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="icon" href="imgs/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=M+PLUS+Rounded+1c:wght@400;500;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="stylethree.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="index.html"><img src="imgs/logo.png" alt="logo"></a>
+            <div class="searchbar">
+                <input type="search">
+                <i class="fa-solid fa-search"></i>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>All Category </li>
+                    <li> Services</li>
+                    <li>
+                        <a href="contact.html"><i class="fa-solid fa-phone"></i></a>
+                        <a href="contact.html" target="_blank">Contact US</a>
+                        <a href="add.html" class="add"><button>Add Product</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="header">
+            <h1>Add Pictures to your listing</h1>
+        </div>
+        <div class="container">
+            <div class="center">
+                <div class="top">
+                    <div class="right">
+                        <i class="fa-regular fa-lightbulb"></i>
+                    </div>
+                    <div class="left">
+                        <ul>
+                            <li>You can add up to 16 pictures</li>
+                            <li>Pictures increase the views of listings</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="list" onclick="this.querySelector('input').click()">
+                        <input type="file" accept="image/*" style="display:none">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="list" onclick="this.querySelector('input').click()">
+                        <input type="file" accept="image/*"  style="display:none">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="list" onclick="this.querySelector('input').click()">
+                        <input type="file" accept="image/*" style="display:none">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="list" onclick="this.querySelector('input').click()">
+                        <input type="file" accept="image/*"  style="display:none">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="list" onclick="this.querySelector('input').click()">
+                        <input type="file" accept="image/*"  style="display:none">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="list" onclick="this.querySelector('input').click()">
+                        <input type="file" accept="image/*"  style="display:none">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="list" onclick="this.querySelector('input').click()">
+                        <input type="file" accept="image/*" style="display:none">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="list" onclick="this.querySelector('input').click()">
+                        <input type="file" accept="image/*"  style="display:none">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="list" onclick="this.querySelector('input').click()">
+                        <input type="file" accept="image/*"  style="display:none">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="list" onclick="this.querySelector('input').click()">
+                        <input type="file" accept="image/*" onchange="previewImage(event, this)" style="display:none">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="list" onclick="this.querySelector('input').click()">
+                        <input type="file" accept="image/*"  style="display:none">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="list" onclick="this.querySelector('input').click()">
+                        <input type="file" accept="image/*"  style="display:none">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="list" onclick="this.querySelector('input').click()">
+                        <input type="file" accept="image/*"  style="display:none">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="list" onclick="this.querySelector('input').click()">
+                        <input type="file" accept="image/*"  style="display:none">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="list" onclick="this.querySelector('input').click()">
+                        <input type="file" accept="image/*"  style="display:none">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="list" onclick="this.querySelector('input').click()">
+                        <input type="file" accept="image/*" onchange="previewImage(event, this)" style="display:none">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="head">
+                <h3>Do you need help?</h3>
+                <p>Contact US Now</p>
+                <a href="contact.html">Contact US</a>
+            </div>
+        </div>
+        <div class="data">
+            <input type="text" id="Phone" placeholder="Enter your phon number">
+            <input type="text" id="address" placeholder="Enter your address">
+            <input type="text" id="details" placeholder="Enter Product details">
+            <button>Save and Publish listing</button>
+        </div>
+    </header>
+    <footer>
+        <div class="footer">
+            <div class="left">
+                <img src="imgs/logo.png" alt="">
+                <div class="icon">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"
+                            style="color:rgb(58, 85, 159) ;"></i></a>
+                    <a href="https://x.com/home" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"
+                            style="color: #ff5e3f;"></i></a>
+                    <a href="https://www.messenger.com" target="_blank"><i class="fa-brands fa-facebook-messenger"
+                            style="color:rgb(58, 85, 159) ;"></i></a>
+                </div>
+            </div>
+            <div class="center">
+                <div>
+                    <h2>About Souqak</h2>
+                    <ul>
+                        <li>About US</li>
+                        <li>Our Products</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Support</h2>
+                    <ul>
+                        <li>Help</li>
+                        <li>Team</li>
+                        <li>privacy</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Others</h2>
+                    <ul>
+                        <li>Brands</li>
+                        <li>sell Anything</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="add.js"></script>
+</body>
+
+</html>

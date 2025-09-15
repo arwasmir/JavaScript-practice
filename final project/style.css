@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body  {
+    font-family: "Noto Sans", sans-serif;
+    height: auto;
+    /* width: 100vw; */
+    background-color: #e6e6e6;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+}
+
+nav .navbar {
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content:  space-between;
+    /* margin-right: ; */
+}
+
+nav .navbar  a {
+    width:300px ;
+}
+
+nav .navbar  img{
+    width: 50%;
+    height: 70%; 
+    margin-left: 20%;
+    margin-top: 15px;
+}
+
+.navbar .list {
+    /* background-color: red; */
+    width: 800px;
+    padding-top: 25px;
+}
+
+.navbar .dropdown {
+    position: relative;
+}
+
+.navbar .content {
+    position: absolute;
+    display: none;
+    background-color: white;
+    width: 250px;
+    left: 0;
+    top: 100%;
+    z-index: 11;
+}
+
+.navbar .content  li {
+    width: 210px;
+    padding-top: 50px;
+    padding-left: 70px;
+}
+
+.navbar .content  li{
+    /* display: block; */
+}
+
+.navbar .dropdown:hover .content {
+    display: block;
+}
+
+.list ul li {
+    display: inline-block;
+    padding-left: 100px;
+    /* padding-right: 20%; */
+}
+
+.list ul li .add {
+    margin-left: 70px;
+}
+
+.list ul li .add button {
+    border: none;
+    background-color: #e6e6e6;
+    width: 150px;
+    height: 50px ;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.list ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .searchbar input {
+    width: 300px;
+    border-radius: 20px;
+    height: 50px;
+    margin: 10px;
+    border: none;
+    margin-top: 20px;
+    background-color: #e6e6e6;
+}
+
+.navbar .searchbar input::selection{
+    border: red;
+}
+
+.navbar .searchbar i  {
+    font-size: 25px;
+}
+
+section .section1 {
+    /* background-color: cadetblue; */
+    width: 90%;
+    height: 550px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+    margin-top: 10%;
+    
+}
+
+section .section1 .icon div{
+    background-color: white;
+    border-radius:10px ;
+}
+
+section .section1 .icon div h3 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+section .section1 .icon div img {
+    margin-left: 30px;
+}
+
+section .section1 .all div img {
+    margin-left: 35px;
+}
+
+section .section1 .icon a {
+    text-decoration: none;
+    color: black;
+}
+
+section .section2 
+{
+    background-color: white;
+    width: 90%;
+    margin-left: 75px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    padding-top:3%;
+    margin-bottom: 30px;
+}
+
+section .section2 h1 {
+    margin-bottom: 50px ;
+    font-size: 35px;
+}
+
+section .section2 a {
+    text-decoration: none;
+    color: black; 
+    font-weight: bold;
+    border: #e6e6e6 solid ;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    display: inline-block;
+    width: 300px;
+    height: 55px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+section .section2 .left{
+    margin-left: 100px;
+}
+
+section .section2 .right {
+    margin-right: 100px;
+}
+
+section .section2 .left a  {
+    margin-left: 60px;
+}
+
+section .section3  .top {
+    display:  flex;
+    justify-content: space-between;
+}
+
+section .section3  .top .one {
+    margin-left: 35px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+section .section3  .top a {
+    text-decoration: none;
+    color: black;
+}
+
+section .section3  .top .two {
+    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+section .section3 {
+    width: 90% ;
+    margin-left: 60px;
+    /* background-color: #8f3636; */
+    height: 50vh;
+}
+
+section .section3 .gr img {
+    width: 250px;
+    /* width: 100%; */
+    display: block;
+    border-radius: 10px;
+}
+
+section .section3 .gr{
+    display: grid;
+    grid-template-columns: repeat(5,250px);
+    gap: 20px;
+    margin-left: 35px;
+    position: relative; 
+}
+
+section .section3 .gr p {
+    position: absolute;
+    bottom: 10px;          
+    /* right: 10px;*/
+    background-color: rgba(0, 0, 0, 0.7);  
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+section .section3 .gr div {
+    background-color: white;
+    border-radius: 10px;
+}
+
+section .section3 .gr .iphone img{
+    height: 250px;
+}
+
+section .section3 .gr .pope img,
+section .section3 .gr .tap img,
+section .section3 .gr .sho img{
+    height: 250px;
+}
+
+footer .footer {
+    background-color: white;
+    height: 300px;
+    width:  100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer img {
+    width: 300px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+footer .footer .icon {
+    padding-left: 70px;
+    font-size: 25px;
+
+}
+
+footer .footer .icon a {
+    color: black;
+}
+
+footer .footer .center  {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer .center div {
+    padding-left: 10px;
+    padding-right: 100px;
+    padding-top: 80px;
+    width: 300px;
+}
+
+footer .footer .center h2 {
+    padding-bottom: 30px;
+}
+
+footer .footer .center li {
+    list-style: none;
+    margin-left: 5px;
+    padding-bottom: 20px;
+}
+
+@media (max-width : 1452px) {
+    nav {
+        width: 89%;
+    }
+    .navbar .list {
+    /* background-color: red; */
+    width: 500px;
+    padding-top: 15px;
+    margin-right: 100px;
+}
+
+    nav .navbar  a {
+    width:300px ;
+    margin-right: 65px;
+}
+
+.navbar .searchbar  {
+    margin-right: 10%;
+}
+.navbar .searchbar input {
+    width: 130px;
+    border-radius: 20px;
+    height: 50px;
+    margin-right:10px;
+    border: none;
+    margin-top: 20px;
+    background-color: #e6e6e6;
+}
+
+
+
+}
