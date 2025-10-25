@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Alan Sans", sans-serif;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000eb;
+    width: 100%;
+}
+
+.navbar a img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.navbar .list ul {
+    display: flex;
+    list-style: none;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.navbar .list ul li {
+    margin-left: 70px;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar .list ul li:hover {
+    color:#7c1726;
+    border-bottom: 2px solid #7c1726;
+}
+
+.navbar .list ul  a {
+    text-decoration: none;
+}
+
+section .projects {
+    height: 750px;
+    width: 100%;
+    padding-top:40px ;
+    background-color: black;
+}
+
+section .projects h1{
+    color: white;
+    padding-left: 45%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.projects .project {
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    row-gap: 40px;
+    /* width: 100%; */
+}
+
+.projects .project div {
+    /* border: white 1px solid; */
+    width: 97%;
+    height: 250px;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+
+.projects .project .food {
+    background-image: url(image/food.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.projects .project .testimonials {
+    background-image: url(image/test.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.projects .project .final {
+    background-image: url(image/soquk.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.projects .project .recipe {
+    background-image: url(image/recipe.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.projects .project div a {
+    width:90px;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-top: 5px;
+    border: solid white 2px;
+    /* color: white; */
+    text-decoration: none;
+    /* margin-left: 45%; */
+    display: inline-block;
+    margin-top: 20% ;
+    display: none;
+}
+
+.projects .project div .a1{
+    padding-left: 25px;
+    color:white;
+    font-weight: bold;
+    margin-left: 25%;
+}
+
+.projects .project div .a2 {
+    color: black;
+    background-color: white;
+    margin-left: 10%;
+}
+
+.projects .buts:hover div a {
+    display: inline-block;
+}
+
+.project .buts {
+    transition: transform 0.3s ease;
+}
+
+.project .buts h2 {
+    color: white;
+    padding-left: 43%;
+}
+
+.project .s h2 {
+    padding-left: 53%;
+}
+.project .r h2 {
+    padding-left: 50%;
+}
+
+.project .buts:hover{
+    transform: scale(1.05); 
+}
+
+.projects .project .food:hover {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("image/food.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.projects .project .testimonials:hover {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("image/test.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.projects .project .final:hover {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("image/soquk.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.projects .project .recipe:hover {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("image/recipe.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer {
+    background-color:#1d1e20;
+    height: 100px;
+}
+
+footer .footer .social {
+    padding-left: 45%;
+    padding-top: 10px;
+}
+
+footer .footer .social a {
+    color: white;
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+footer .copyright {
+    color: white;
+    padding-left: 35%;
+    padding-top: 1%;
+}
+
+footer .copyright h2{
+    color: #9da1a5;
+}
+
+footer .copyright h2 span {
+    color: #7c1726;
+}
