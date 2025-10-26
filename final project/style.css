@@ -310,35 +310,86 @@ footer .footer .center li {
     padding-bottom: 20px;
 }
 
-@media (max-width : 1452px) {
-    nav {
-        width: 89%;
+@media (max-width: 900px) {
+    .navbar {
+        position: relative;
     }
-    .navbar .list {
-    /* background-color: red; */
-    width: 500px;
-    padding-top: 15px;
-    margin-right: 100px;
+
+    .humburger {
+        display: block;
+        cursor: pointer;
+        font-size: 25px;
+        width: 45px;
+        height: 45px;
+        /* background-color: #7c1726; */
+        position: relative;
+        margin-right: 45px;
+        margin-top: 10px;
+    }
+
+    .humburger i {
+        position: absolute;
+        inset: 0;
+        /*left = 0 , right = 0 , top = 0 , bottom = 0*/
+        margin: auto;
+        width: max-content;
+        height: max-content;
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+    .humburger .fa-bars {
+        opacity: 1;
+    }
+
+    .humburger .fa-bars.active {
+        opacity: 0;
+        transform: rotate(180deg);
+    }
+
+    .humburger .fa-xmark.active {
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+
+    .list {
+        position: absolute;
+        background-color: #7c1726;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+    }
+
+    .list.active {
+        opacity: 1;
+    }
+
+    .navbar .list ul {
+        display: block;
+    }
+
+    .navbar .list ul li {
+        margin: 20px 0;
+        margin-left: 65px;
+        border-bottom: 1px solid #a4a4a4;
+        padding-bottom: 10px;
+    }
+
+    .navbar .list ul .last {
+        border-bottom: none;
+    }
+
+    .navbar .list ul li a {
+        margin: 0;
+    }
+
+    .navbar .list ul li:hover {
+    color: #000000;
+    border-bottom: 2px solid #000000;
 }
 
-    nav .navbar  a {
-    width:300px ;
-    margin-right: 65px;
+.dropdown {
+    display: none;
 }
-
-.navbar .searchbar  {
-    margin-right: 10%;
-}
-.navbar .searchbar input {
-    width: 130px;
-    border-radius: 20px;
-    height: 50px;
-    margin-right:10px;
-    border: none;
-    margin-top: 20px;
-    background-color: #e6e6e6;
-}
-
-
-
 }

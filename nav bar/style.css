@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Alan Sans", sans-serif;
+}
+
+nav .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ec8fbe;
+    height: 70px;
+    width: 100%;
+}
+
+nav .navbar img {
+    width: 150px;
+    padding-top: 4%;
+    margin-left: 65%;
+}
+
+nav .navbar ul{
+    display: flex;
+    margin-left: 50%;
+    margin-top: 2%;
+}
+
+nav .navbar .list  {
+    width: 100%;
+    height: auto;
+}
+
+nav .navbar .list ul li{
+    list-style: none ;
+    padding-left: 10%;
+}
+
+nav .navbar .list ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 17px;
+    
+}
+
+nav .navbar .list ul li a:hover{
+border-bottom: 3px solid #f1cfe0;
+} 
+
+.humburger {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        position: relative;
+    }
+
+    .humburger {
+        display: block;
+        cursor: pointer;
+        font-size: 25px;
+        width: 45px;
+        height: 45px;
+        position: relative;
+        margin-right: 45px;
+        margin-top: 15px;
+    }
+
+    .humburger i {
+        position: absolute;
+        inset: 0;
+        margin:auto;
+        width: max-content;
+        height: max-content;
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+    .humburger .fa-bars {
+        opacity: 1;
+    }
+
+    .humburger .fa-bars.active {
+        opacity: 0;
+        transform: rotate(180deg);
+    }
+
+    .humburger .fa-xmark.active {
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+
+    .list {
+        position: absolute;
+        background-color: #f1cfe0;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+    }
+
+    .list.active {
+        opacity: 1;
+    }
+
+    .navbar .list ul {
+        display: block;
+    }
+
+    .navbar .list ul li {
+        margin-left: 20px 0;
+        margin-left: 65px;
+        border-bottom: 2px solid #ec8fbe; 
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .navbar .list ul {
+        margin-left: 0px;
+    }
+
+    .navbar .list ul .last {
+        border-bottom: none;
+        padding-bottom: 20px;
+    }
+
+    .navbar .list ul li a {
+        margin: 0;
+    }
+
+        .navbar .list ul li a:hover {
+    color:#ec8fbe;
+}
+}
