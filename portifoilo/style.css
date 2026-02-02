@@ -94,7 +94,7 @@ body {
     display: inline-block;
     text-decoration: none;
     text-align: center;
-    padding-top: 2%;
+    padding-top: 1.5%;
 }
 
 .social {
@@ -198,8 +198,11 @@ section .projects h1 {
 
 .projects .project div .a2 {
     color: black;
+    font-weight: bold;
     background-color: white;
     margin-left: 10%;
+    padding-left: 23px;
+    /* padding-top: 6px; */
 }
 
 .projects .buts:hover div a {
@@ -330,18 +333,22 @@ section .projects h1 {
     text-decoration: none;
     border: solid white 1px;
     margin-left: 48%;
-    margin-top: 5%;
+    margin-top: 3%;
     width: 100px;
     height: 40px;
     padding-left: 12px;
-    padding-top: 8px;
+    padding-top: 10px;
     border-radius: 5px;
-    margin-bottom: 35px;
+    margin-bottom: 3%;
+}
+
+.section2 .btn3:hover {
+    background-color: #7c17269c;
 }
 
 footer {
-    background-color: #1d1e20;
-    height: auto;
+    background-color:#1d1e20;
+    height: 100px;
 }
 
 footer .footer .social {
@@ -361,9 +368,8 @@ footer .copyright {
     padding-top: 1%;
 }
 
-footer .copyright h2 {
+footer .copyright h2{
     color: #9da1a5;
-    padding-bottom: 20px ;
 }
 
 footer .copyright h2 span {

@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 * {
-    
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: "Quicksand", sans-seri ;
+    font-family: "Quicksand", sans-serif;
 }
 
 header {
-    height: 100vh;
-    background: url(img/home_bg.jpeg) center center/ cover no-repeat ;
+    height: 85vh;
+    padding: 20px;
+    background: url(img/home_bg.jpeg) center center/ cover no-repeat;
     position: relative;
 }
 
@@ -47,7 +49,7 @@ header a {
 }
 
 #nav ul li a:hover {
-    border-bottom: solid rgb(255, 128, 0) 2px ;
+    border-bottom: solid rgb(255, 128, 0) 2px;
 }
 
 header .content {
@@ -55,7 +57,9 @@ header .content {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 75vh;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 90px;
 
 }
 
@@ -66,7 +70,7 @@ header .content h1 {
 }
 
 .content .food {
-    color: rgb(255, 128, 0);
+    color: #ff8000;
 }
 
 header .content p {
@@ -118,12 +122,12 @@ header .content a:hover {
 }
 
 #about {
-    height: 80vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f4f4f4;
-
+    padding-bottom: 20px;
 }
 
 #about .tittle {
@@ -131,7 +135,7 @@ header .content a:hover {
     justify-content: center;
     text-align: center;
     align-items: center;
-    padding: 40px 0 ;
+    padding: 40px 0;
 }
 
 #about .tittle h2 {
@@ -157,7 +161,8 @@ header .content a:hover {
 #about .content p {
     color: #a4a4a4;
     margin-right: 7rem;
-    line-height: 1.6;;
+    line-height: 1.6;
+    ;
 }
 
 #about .content a {
@@ -175,24 +180,25 @@ header .content a:hover {
     border-radius: 15px;
 }
 
-#about .content a:hover{
+#about .content a:hover {
     background-color: #e4b95b;
 }
 
 .offers {
-    height: 85vh;
+    height: auto;
+    padding-bottom: 20px;
     background: url(img/offer-background.jpg) center center/ cover no-repeat;
 }
 
 .offers .header {
-    padding: 40px 0 70px ;
+    padding: 40px 0 70px;
     justify-content: center;
     text-align: center;
 }
 
 .offers .header h2 {
     font-size: 40px;
-    color:#e4b95b;
+    color: #e4b95b;
 }
 
 .offers .header p {
@@ -218,7 +224,7 @@ header .content a:hover {
     color: #fff;
     margin-top: 10px;
     font-size: 20px;
-    
+
 }
 
 .offers .offers-content p {
@@ -239,22 +245,24 @@ header .content a:hover {
     justify-content: center;
     text-align: center;
     align-items: center;
-    
+
 }
 
 #menu {
-    height: 150vh;
+    height: auto;
     background-color: #f4f2ed;
     padding: 5rem 0;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
-#menu .tittle{
+#menu .tittle {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 #menu .tittle h2 {
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
     font-size: 40px;
     color: #383848;
 }
@@ -262,6 +270,23 @@ header .content a:hover {
 #menu .tittle p {
     font-size: 13px;
     color: #a4a4a4;
+}
+
+#menu .btn {
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu .btn button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #383848;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 #menu .menu-items {
@@ -274,16 +299,15 @@ header .content a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 040px;
+    margin: 0 40px;
 }
 
-#menu .menu-items .menu-item div  {
+#menu .menu-items .menu-item div {
     padding-left: 1rem;
-    
 }
 
 #menu .menu-items .menu-item h3 {
-    border-bottom:#a4a4a4 1px dashed ;
+    border-bottom: #a4a4a4 1px dashed;
     position: relative;
     padding-bottom: .5rem;
     color: #383848;
@@ -300,7 +324,7 @@ header .content a:hover {
     padding-top: .5rem;
 }
 
-#menu .menu-items .menu-item img{
+#menu .menu-items .menu-item img {
     border-radius: 50%;
     width: 80px;
 }
@@ -325,7 +349,8 @@ header .content a:hover {
 }
 
 .Meals-times {
-    height: 50vh;
+    height: auto;
+    padding-bottom: 20px;
     background: url(img/daytime_bg.jpeg) center center / cover fixed no-repeat;
 }
 
@@ -338,7 +363,7 @@ header .content a:hover {
     justify-content: center;
     text-align: center;
     align-items: center;
-    padding: 50px ;
+    padding: 50px;
 }
 
 .Meals-times .meals h3 {
@@ -353,6 +378,8 @@ header .content a:hover {
 
 #gallery {
     background: url(img/offer-background.jpg);
+    height: auto;
+    padding-bottom: 20px;
 }
 
 #gallery h2 {
@@ -372,7 +399,7 @@ header .content a:hover {
 
 #gallery .gall img {
     width: 280px;
-    height: 200px ;
+    height: 200px;
     padding: 10px;
     border-radius: 30px;
     margin: 20px;
@@ -386,7 +413,8 @@ header .content a:hover {
 
 #contact {
     background-color: #f4f2ed;
-    height: 80vh;
+    height: auto;
+    padding-bottom: 20px;
 }
 
 #contact .tittle {
@@ -413,7 +441,7 @@ header .content a:hover {
 
 
 #contact .tittle i {
-    color: #e4b95b ;
+    color: #e4b95b;
 
 }
 
@@ -427,19 +455,29 @@ header .content a:hover {
     width: 50%;
 }
 
-#contact form input,
-textarea {
+#contact form input {
     display: block;
     width: 100%;
     padding: 20px 15px;
     margin: 15px;
     background-color: #e3e2dd;
     border: none;
+    border-radius: 10px;
 }
 
-#contact .but{
+#contact form textarea {
+    display: block;
+    width:100%;
+    padding: 20px 15px;
+    margin: 15px;
+    background-color: #e3e2dd;
     border: none;
-    border:  solid 1px;
+    border-radius: 10px;
+} 
+
+#contact .but {
+    border: none;
+    border: solid 1px;
     border-radius: 20px;
     width: 150px;
     height: 50px;
@@ -452,7 +490,7 @@ textarea {
     background-color: #383848;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: #fff;
 }
@@ -463,4 +501,207 @@ footer {
     color: #fff;
     padding: 15px 0;
     font-size: 14px;
+}
+
+.humMenu {
+    display: none;
+}
+
+/* mobil device*/
+
+@media (max-width: 671px) {
+header .content h1 {
+    width: 300px;
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+#about .content {
+    display: block;
+}
+
+#about .content img {
+    width: 300px;
+    margin-left: 17.5rem;
+}
+
+#about .content p {
+    width:450px ;
+    margin-left: 8rem;
+}
+
+#about .content a {
+    margin-left: 8rem;
+}
+
+.offers .offers-content img {
+    width: 120px;
+}
+
+.offers .offers-content img:hover {
+    width: 130px;
+    height: 130px;
+}
+
+#menu .menu-items {
+    display: block;
+}
+
+#menu .menu-items .menu-item {
+    margin-bottom: 25px;
+}
+
+.Meals-times .meals {
+    display: block;
+}
+
+#contact .tittle {
+    display: block;
+}
+
+#contact .tittle h3,
+#contact .tittle .f {
+    padding-left: 170px;
+}
+
+
+#contact .tittle h2{
+    padding-left: 140px;
+}
+
+
+#contact .tittle h3,
+#contact .tittle h2 {
+    width: 550px;
+}
+
+#contact .tittle p {
+    padding-left: 140px;
+    width: 550px;
+}
+
+#contact form input {
+    width: 450px;
+}
+
+#contact form textarea {
+width: 450px;
+}
+
+#contact .but {
+    width: 450px;
+}
+
+}
+
+@media(min-width:672px) and (max-width:768px) {
+    header .content {
+        padding-top: 90px;
+        
+    }
+
+    #about .content  {
+        display: block;
+    }
+
+    #about .content p {
+        width: 500px;
+        margin-left: 15%;
+    }
+
+    #about .content img {
+    width: 400px;
+    margin-left: 35%;
+}
+
+.offers .offers-content img {
+    width: 150px;
+}
+
+.offers .offers-content img:hover {
+    width: 170px;
+    height: 170px;
+}
+.Meals-times .meals img {
+    width: 205px;
+}
+
+#contact .tittle .left-tittle {
+    padding-right: 80px;
+}
+}
+
+
+@media (max-width: 900px) {
+    #nav {
+        position: relative;
+        padding-left: 15px;
+        z-index: 111;
+    }
+
+    #nav .list {
+        position: absolute;
+        top: 75px;
+        left: 0px;
+        background-color: #ff8000;
+        width: 100%;
+        height: 215px;
+        opacity: 0;
+        padding-left: 15px;
+    }
+
+    #nav .list ul {
+        display: block;
+    }
+
+    #nav .list ul li {
+        border-bottom: 2px solid #e3e2dd;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    #nav .list ul li:last-child{
+        border: none;
+    }
+
+    #nav .list ul li {
+        padding-top: 10px;
+    }
+
+    #nav .list.active {
+        opacity: 1;
+    }
+
+    .humMenu {
+        position: relative;
+        display: block;
+        width: 45px;
+        height: 45px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .humMenu i {
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            height: max-content;
+            width: max-content;
+            opacity: 0;
+            transition: 0.3s ease;
+    }
+
+    .humMenu .fa-bars {
+        opacity: 1;
+    }
+
+    .humMenu .fa-bars.active{
+        opacity: 0;
+        transform: rotate(180deg);
+    }
+
+    .humMenu .fa-xmark.active {
+        opacity: 1;
+        transform: rotate(180deg);
+    }
 }
